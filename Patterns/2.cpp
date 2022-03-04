@@ -1,0 +1,23 @@
+/*n=3
+1 2 3
+4 5 6
+7 8 9
+*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+#ifndef ONLINE_JUDGE
+	freopen("input.txt", "r", stdin); // redirects standard input
+	freopen("output.txt", "w", stdout); // redirects standard output
+#endif
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n * n; i = i + 3 )
+	{
+		int cnt = i + 2;
+		for (int j = i; j <= cnt; j++)cout << j << " ";
+		cout << endl;
+
+	}
+}
